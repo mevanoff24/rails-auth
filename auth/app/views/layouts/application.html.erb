@@ -9,7 +9,7 @@
 <body>
   <div id="header">
     <% if current_user %>
-      Hi <%= current_user.name %>
+      Hi <%= current_user.name.capitalize %>
       <%= link_to "Log Out", logout_path %>
     <% else %>
     <%= link_to "Sign Up", signup_path %>
